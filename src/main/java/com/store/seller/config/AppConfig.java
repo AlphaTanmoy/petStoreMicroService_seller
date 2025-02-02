@@ -1,6 +1,5 @@
 package com.store.seller.config;
 
-import com.store.authentication.config.JwtTokenValidator;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -30,7 +29,11 @@ public class AppConfig {
                 .authorizeHttpRequests(Authorize -> Authorize
                 		.requestMatchers("/api/admin/**").hasAnyRole("SHOP_OWNER","ADMIN")
                                 .requestMatchers("/api/**").authenticated()
-                                .requestMatchers("/api/products/*/reviews","/sent/otp/**").permitAll()
+                                .requestMatchers(
+                                        "/findBlackListedUser/**",
+                                        "verificationCode/getCode/**",
+                                        "/sent/otp/**"
+                                ).permitAll()
                                 .anyRequest().permitAll()
                 )
                 .addFilterBefore(new JwtTokenValidator(), BasicAuthenticationFilter.class)
@@ -42,7 +45,6 @@ public class AppConfig {
 
     }
 
-    // CORS Configuration
     private CorsConfigurationSource corsConfigurationSource() {
         return new CorsConfigurationSource() {
             @Override

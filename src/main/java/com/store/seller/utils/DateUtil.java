@@ -1,8 +1,8 @@
 package com.store.seller.utils;
 
-import com.store.authentication.customDTO.TwoParameterDTO;
-import com.store.authentication.enums.DATE_RANGE_TYPE;
-import com.store.authentication.request.ApiKeyGenerationRequest;
+import com.store.seller.customDTO.TwoParameterDTO;
+import com.store.seller.enums.DATE_RANGE_TYPE;
+import com.store.seller.request.ApiKeyGenerationRequest;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,6 +1,6 @@
 package com.store.seller.utils;
 
-import com.store.authentication.config.KeywordsAndConstants;
+import com.store.seller.config.KeywordsAndConstants;
 import org.springframework.stereotype.Component;
 
 import java.util.UUID;

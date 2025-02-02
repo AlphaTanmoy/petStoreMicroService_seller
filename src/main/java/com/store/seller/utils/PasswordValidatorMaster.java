@@ -1,7 +1,7 @@
 package com.store.seller.utils;
 
-import com.store.authentication.config.KeywordsAndConstants;
-import com.store.authentication.error.BadRequestException;
+import com.store.seller.config.KeywordsAndConstants;
+import com.store.seller.error.BadRequestException;
 import org.springframework.stereotype.Component;
 
 @Component

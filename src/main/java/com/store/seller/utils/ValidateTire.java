@@ -1,9 +1,9 @@
 package com.store.seller.utils;
 
-import com.store.authentication.enums.TIRE_CODE;
-import com.store.authentication.error.BadRequestException;
-import com.store.authentication.model.User;
-import com.store.authentication.repo.UserRepository;
+import com.store.seller.enums.TIRE_CODE;
+import com.store.seller.error.BadRequestException;
+import com.store.seller.model.User;
+import com.store.seller.repo.UserRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.Objects;

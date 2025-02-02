@@ -1,6 +1,6 @@
 package com.store.seller.config;
 
-import com.store.authentication.utils.EncryptionUtils;
+import com.store.seller.utils.EncryptionUtils;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;

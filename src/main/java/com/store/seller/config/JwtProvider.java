@@ -1,12 +1,11 @@
 package com.store.seller.config;
 
-import com.store.authentication.config.KeywordsAndConstants;
-import com.store.authentication.enums.TIRE_CODE;
-import com.store.authentication.enums.USER_ROLE;
-import com.store.authentication.error.BadRequestException;
-import com.store.authentication.model.User;
-import com.store.authentication.repo.UserRepository;
-import com.store.authentication.utils.EncryptionUtils;
+import com.store.seller.enums.TIRE_CODE;
+import com.store.seller.enums.USER_ROLE;
+import com.store.seller.error.BadRequestException;
+import com.store.seller.model.User;
+import com.store.seller.repo.UserRepository;
+import com.store.seller.utils.EncryptionUtils;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
